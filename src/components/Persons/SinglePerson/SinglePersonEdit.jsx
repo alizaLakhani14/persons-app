@@ -14,7 +14,7 @@ const SinglePersonEdit = (props) => {
 				<Button variant="light" className="button text-primary">
 					<FontAwesomeIcon icon={faCheck} />
 				</Button>
-				<Button variant="light" className="button text-danger">
+				<Button variant="light" className="button text-danger" onClick={props.EnablingInfoMode }>
 					<FontAwesomeIcon icon={faTimes} />
 				</Button>
 			</ButtonGroup>

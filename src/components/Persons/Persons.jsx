@@ -57,12 +57,16 @@ class Persons extends Component {
 		return (
 			<div>
 				<div className="Persons">
+					<h1>Persons
+
+					</h1>
 					{this.state.personData.map((person, index) => (
 						<SinglePerson
 							person={person}
 							key={person.id}
 							makingEditModeEnabled={() => this.makeEditModeEnable(true, person.id)}
 							deletingPerson={() => this.deletePerson(index)}
+							disableEditMode = {() => this.makeEditModeEnable(false, person.id)}
 						/>
 					))}
 				</div>

@@ -8,7 +8,8 @@ const SinglePerson = (props) => {
 	return (
 		<Card style={{ width: '18rem' }} className="SinglePerson">
 			{props.person.isEditModeEnabled ? (
-				<SinglePersonEdit person={props.person} />
+				<SinglePersonEdit person={props.person}
+				EnablingInfoMode = {props.disableEditMode} />
 			) : (
 				<SinglePersonInfo person={props.person} 
 				EditModeEnable={props.makingEditModeEnabled}
